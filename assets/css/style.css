@@ -55,7 +55,6 @@ i:hover {
 
 header {
   background-color: #255EE9;
-  /* CANCELLA L'ALTEZZA E BORDER */
   height: 80px; 
 }
 
@@ -71,14 +70,14 @@ header .top-bar {
 }
 
 .button {
-  padding: 7px 11px;
   border-radius: 20px;
   background-color: white;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .button.small-btn {
   font-size: 0.8rem;
+  padding: 7px 11px;
 }
 
 .button a {
@@ -98,12 +97,16 @@ header .top-bar {
 
 .jumbotron {
   padding: 50px 0;
+  background-position: center;
   background-image: url(../img/jumbo.png);
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   color: white;
   text-align: center;
+  /* height: 400px; */
 }
+
 
 .jumbotron .container {
   width: 40%;
@@ -126,8 +129,10 @@ header .top-bar {
   padding: 10px;
 }
 
-.button.big-btn {
+
+.button.big-btn a {
   padding: 10px 20px;
+  display: inline-block;
 }
 
 #link-web-app {
