@@ -21,6 +21,10 @@ img {
   vertical-align: middle;
 }
 
+i:hover {
+  cursor: pointer;
+}
+
 .debug {
   border: 3px solid black;
 }
@@ -206,6 +210,10 @@ header .top-bar {
   background-color: #7289DA;
 }
 
+#main-download a {
+  color: white;
+}
+
 .info-box .special .text-box {
   padding: 30px 0;
 }
@@ -232,13 +240,20 @@ footer span {
   padding: 10px 0;
 }
 
+/* FOOTER TOP */
+
 .footer-top {
   border-bottom: 1px solid #4F5D8C;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-top a {
+  color: white;
 }
 
 .footer-top .dida {
   width: 15%;
+  padding-top: 10px;
 }
 
 .footer-top .menu {
@@ -247,13 +262,14 @@ footer span {
 }
 
 .footer-top .menu .col {
-  height: 250px;
+  /* height: 250px; */
   flex-basis: 100%;
+  padding-bottom: 40px;
   /* text-align: center; */
 }
 
-.footer-bottom {
-  justify-content: space-between;
+.social-icon i {
+  padding-right: 20px;
 }
 
 .dida img {
@@ -269,10 +285,16 @@ footer span {
   font-weight: bold;
 }
 
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+  justify-content: space-between;
+}
 #register {
   background-color: #7289DA;
 }
 
 #register a {
   color: white;
+  line-height: 20px;
 }
