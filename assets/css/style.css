@@ -44,7 +44,6 @@ header {
   background-color: #255EE9;
   /* CANCELLA L'ALTEZZA E BORDER */
   height: 80px; 
-  border: 1px solid black;
 }
 
 header .top-bar {
@@ -92,14 +91,14 @@ header .top-bar {
   color: white;
 }
 
-/* MAIN */
+/* JUMBOTRON */
 
 .jumbotron {
+  background-image: url(../img/jumbo.png);
+  background-size: auto;
   padding: 50px 0;
   color: white;
   text-align: center;
-  background-color: blue;
-  border: 1px solid black;
 }
 
 .jumbotron .container {
@@ -115,14 +114,15 @@ header .top-bar {
   line-height: 2;
 }
 
-.jumbotron .download {
-  justify-content: space-around;
+.download {
+  justify-content: center;
 }
 
 .jumbotron ul li {
-  padding-top: 10px;
-  width: 100%;
+  padding: 10px;
 }
+
+/* MAIN */
 
 .info-box {
   width: 100%;
