@@ -57,7 +57,8 @@ header .top-bar {
   height: 100%;
 }
 
-.top-bar .logo-top img {
+.top-bar .logo-top img,
+.footer-bottom .logo-bottom img {
   vertical-align: middle;
 }
 
@@ -70,17 +71,24 @@ header .top-bar {
   padding: 7px 11px;
   border-radius: 20px;
   background-color: white;
+  /* display: inline-block; */
 }
 
-.button.small {
+.button.small-btn {
   font-size: 0.8rem;
 }
 
 .button a {
   color: black;
-
 }
 
+.text-box > h2 {
+  padding-bottom: 20px;
+}
+
+.text-box > p {
+  line-height: 1,5;
+}
 
 .top-bar .nav a:hover {
   color: white;
@@ -124,7 +132,6 @@ header .top-bar {
 }
 
 .button.big-btn {
-  display: inline-block;
   padding: 10px 20px;
 }
 
@@ -137,10 +144,6 @@ header .top-bar {
 }
 
 /* MAIN */
-
-/* .info-box {
-
-} */
 
 .info-section {
   padding: 40px 0;
@@ -161,7 +164,7 @@ header .top-bar {
 .info-box .text-box {
   width: 40%;
   height: 100%;
-  padding-right: 325px;
+  padding-right: 255px;
 }
 
 .main-center {
@@ -202,4 +205,45 @@ header .top-bar {
 
 #main-download {
   background-color: #7289DA;
+}
+
+.info-box .special .text-box {
+  padding: 30px 0;
+}
+
+.special {
+  padding-bottom: 100px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #23272A;
+  color: white;
+  padding: 50px 0;
+  height: 100%;
+}
+
+.footer-top {
+  border-bottom: 1px solid #4F5D8C;
+  margin-bottom: 50px;
+}
+
+.footer-top .dida {
+  width: 25%;
+}
+
+.footer-top .menu {
+  width: 75%;
+  /* height: 100%; */
+}
+
+.footer-top .menu .col {
+  height: 250px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.footer-bottom {
+  justify-content: space-between;
 }
