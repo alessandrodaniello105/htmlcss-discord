@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #fff;
+}
+
+main {
+  padding-top: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.debug {
+  border: 3px solid black;
+}
+
+.debug-box > div {
+  background-color: rgba(255, 0, 0, 0,2);
+  border: 1px solid black;
+}
+
+.container {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* HEADER */
+
+header {
+  background-color: #255EE9;
+  height: 80px; 
+  position: fixed;
+  width: 100%;
+  /* top: 0; */
+  /* bottom: auto; */
+}
+
+header .top-bar {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.top-bar ul li {
+  padding: 0 25px;
+  color: white;
+}
+
+.button {
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+}
+
+.button.small-btn {
+  font-size: 0.8rem;
+  padding: 7px 11px;
+}
+
+.button a {
+  color: black;
+}
+
+.top-bar .nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.top-bar .nav a,
+.top-bar .nav a:visited {
+  color: white;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  padding: 60px 0;
+  background-position: center;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  color: white;
+  text-align: center;
+  /* height: 400px; */
+}
+
+
+.jumbotron {
+  width: 100%;
+}
+
+.jumbotron .dida-download {
+  width: 100%;  
+  max-width: 650px;
+}
+
+.jumbotron h1 {
+  padding-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.jumbotron p {
+  line-height: 2;
+}
+
+.download {
+  justify-content: center;
+}
+
+.jumbotron ul li {
+  padding: 10px;
+}
+
+
+.button.big-btn a {
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+#link-web-app {
+  background-color: #23272A;
+}
+
+#link-web-app a {
+  color: white;
+}
+
+/* MAIN */
+
+.main-center {
+  flex-direction: column;
+}
+
+.info-section {
+  width: 51%;
+  padding: 40px 0;
+}
+
+.info-box .img-box {
+  width: 60%;
+  text-align: center;
+}
+
+.info-box .img-box img {
+  width: 100%;
+}
+
+.info-box .text-box {
+  width: 40%;
+  /* height: 100%; */
+}
+
+.text-container {
+  width: 80%;
+  padding-top: 50px;
+}
+
+.text-container > h2,
+.special .text-box > h2 {
+  padding-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.text-container > p {
+  line-height: 1.5;
+}
+
+/* ULTIMA SEZIONE SPECIAL */
+
+.info-box .special {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.main-center .info-box:nth-child(even){
+  background-color: #F6F6F6;;
+}
+
+.special .text-box {
+  text-align: center;
+  width: 100%;
+  max-width: 750px;
+  padding: 30px 0;
+}
+
+.special .img-box {
+  padding: 0;
+}
+
+.special .img-box img {
+  height: 100%;  
+}
+
+.cta {
+  padding: 50px 0;
+  background-image: url(../img/stars.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  text-align: center;
+  line-height: 5px;
+} 
+
+#main-download {
+  background-color: #7289DA;
+}
+
+#main-download a {
+  color: white;
+}
+/* /ULTIMA SEZIONE SPECIAL */
+
+
+/* FOOTER */
+
+footer {
+  background-color: #23272A;
+  color: white;
+  padding: 50px 0;
+  height: 100%;
+}
+
+footer h2 {
+  color: #7289DA;
+}
+
+footer span {
+  display: inline-block;
+  padding: 20px 0;
+  font-size: 0.8rem;
+}
+
+/* FOOTER TOP */
+
+.footer-top {
+  border-bottom: 1px solid #4F5D8C;
+  margin-bottom: 10px;
+}
+
+.footer-top a {
+  color: white;
+}
+
+.footer-top .dida {
+  width: 15%;
+  padding-top: 10px;
+}
+
+.footer-top .dida span i {
+  font-size: 0.7rem;
+}
+
+.footer-top .menu {
+  width: 85%;
+  justify-content: space-between;
+  /* height: 100%; */
+}
+
+.footer-top .menu .col {
+  /* height: 250px; */
+  /* flex-basis: 100%; */
+  padding-bottom: 40px;
+  /* text-align: center; */
+}
+
+.social-icon i {
+  padding-right: 20px;
+}
+
+.dida img {
+  height: 14px;
+}
+
+.menu ul li {
+  padding: 5px 0 5px 100px;
+}
+
+.menu li:first-child {
+  color: #7289DA;
+  font-weight: bold;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+  justify-content: space-between;
+}
+#register {
+  background-color: #7289DA;
+}
+
+#register a {
+  color: white;
+  line-height: 20px;
+}
